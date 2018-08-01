@@ -1,5 +1,5 @@
-# My Personal Website
-====================
+My Personal Website
+==================
 
 Flask implementation and heavy use of HTML and CSS
 
