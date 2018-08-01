@@ -1,7 +1,7 @@
 # My Personal Website
 ====================
 
-## Flask implementation and heavy use of HTML and CSS
+Flask implementation and heavy use of HTML and CSS
 
 ## To do:
 - Revamp <div class> tags for better organization
