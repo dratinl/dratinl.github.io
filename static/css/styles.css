@@ -1,20 +1,30 @@
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 /* Header formatting */
 
 header .jumbotron{
+  font-family: "Courier New", Courier, monospace;
   background-color: #5f5f5f;
   text-align: center;
 }
 header .jumbotron:hover{
-  background-color: #25ABD9;
+  background-color: teal;
+}
+header .jumbotron:hover h1 {
+  color: #5f5f5f;
+}
+header .jumbotron:hover h6 {
+  color: #5f5f5f;
 }
 header .jumbotron h1 {
-  -webkit-transform: translateY(60%);
+  font-size: 80px;
+  -webkit-transform: translateY(35%);
 }
 header .jumbotron h6 {
+  font-size: 20px;
   -webkit-transform:translateY(100%);
 }
 
@@ -29,29 +39,53 @@ header .jumbotron h6 {
   z-index: 100;
 }
 .navbar a{
-  float: left; 
-  display: block; 
-  text-align: center; 
-  padding: 12px 16px; 
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
   text-decoration: none; 
   font-size:20px; 
   color:white;
 }
+.navbar a:hover{
+  background-color:teal;
+}
 /* Main content formatting */
+h2 {
+  color: teal;
+}
 .container {
   margin-bottom: 80px; 
-  outline-color:#25ABD9; 
+  outline-color: #25ABD9; 
   outline-style:solid; 
   height:auto; 
-  padding-bottom: 12px; 
-  padding-top: 12px
+  padding-bottom: 8px; 
+  padding-top: 12px;
+  width: 55%;
 }
 .container:hover{
-  outline-color:red;
+  outline-color:#FF6700;
 }
 
-#personal_education a{
-  color: #000000; 
+#personal_skills h5 {
+  color: teal;
+}
+#personal_skills h6{
+  color: #5f5f5f;
+  font-size: 16px;
+  display: block;
+}
+#personal_skills p{
+  position: relative;
+  bottom: 0;
+  font-size: 8px;
+  display:block;
+  color: #5f5f5f;
+  padding-top: 24px;
+}
+
+#personal_education a,h5{
+  color: teal; 
   font-size: 16px; 
   font-weight: bold;
   display: block; 
@@ -59,12 +93,12 @@ header .jumbotron h6 {
   margin-bottom: 0.25em
 }
 #personal_education h6{
-  color:#5f5f5f;
+  color: #5f5f5f;
 }
 /* Contact icon formatting */
 i {
-  font-size:36px; 
-  color:#585858;
+  font-size: 36px; 
+  color: #585858;
 }
 .footer {
   background-color:#97bde4; 
