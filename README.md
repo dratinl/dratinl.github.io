@@ -9,4 +9,4 @@ Flask implementation and heavy use of HTML and CSS
 - Add onto hobbies and clean up summary sections
 - Add content
 - Just make it cooler in general
-- Implement JS and Jquery for animations
+- <s>Implement JS and Jquery for animations</s>

@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-	<script src="{{ url_for('static', filename='js/less.js') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='js/scripts.js') }}" type="text/javascript"></script>
+	<script type="text/javascript" src= "{{ url_for('static',filename='js/scripts.js') }}"></script>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Custom Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <!-- Social icons from fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS/JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- My CSS stylesheet -->
  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
     <!-- Title icon image -->
 	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA5sKeAP///wDkvZcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMzMzMzAAMzIiIzMzMAAzIjIiMzMwADMiMiIzMzAAMyIyIjMzMAAzIzIiMzMwADMzMiIzMzAAMzMyIjMzMAAzMzMjMzMwADMzMzMzMzAAMzMyIjMzMAATIyIiIyMwADIiMiIyIjAAMzMzMzMzMAAzMzMjMzMwADMzMzMzMzDAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAA" rel="icon" type="image/x-icon" />
 	
 	<title>Jacob Arriola</title>
-
+	<style type="text/css">
+		body{
+			position:relative;
+		}
+	</style>
 </head>
-	<body>
+	<body data-spy="scroll" data-target="#scrollbar">
 		<header>
 			<!-- Top banner -->
-			<div class="jumbotron">
+			<div class="jumbotron" id="home">
 				<h1 style="color:white">Jacob Arriola</h1>
 				<h6 style="color:white">Jake of all trades</h6>
 			</div>
 		</header>
 		<!-- Footer navigation bar -->
-		<nav class="navbar">
+		<nav class="navbar navbar-default" role="navigation" id="scrollbar">
 			<div class="row">
-				<a href="#">Home</a>
-				<a href="#personal_about">About</a>
-				<a href="#personal_skills">Skills</a>
-				<a href="#personal_education">Education</a>
-				<a href="#personal_hobby">Hobbies</a>
-				<a href="#personal_contact">Contact</a>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#home">^</a></li>
+						<li><a href="#personal_about">About</a></li>
+						<li><a href="#personal_skills">Skills</a></li>
+						<li><a href="#personal_hobby">Hobbies</a></li>
+						<li><a href="#personal_education">Education</a></li>
+						<li><a href="#personal_contact">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<!-- Main Content -->
+
 		<div class="container" id="personal_summary">
 			<h2>Welcome!</h2>
-			<p>I am a recent graduate of <font color=teal>Rensselaer Polytechnic Institute</font> with a B.S degree in <font color=teal>Interdisciplinary Science</font>. My coursework included classes primarily in <font color=teal>Computer Science</font>, Physics and Mathematics, which has improved my critical thinking and problem-solving skills. I am a flexible individual with the ability to hit the ground running in any environment. My involvement in youth development and education has given me insight into better ways to teach and learn. 
+			<hr>
+			<p>I am a recent graduate of <font color="#FF6700">Rensselaer Polytechnic Institute</font> with a B.S degree in <font color="#FF6700">Interdisciplinary Science</font>. My coursework included classes primarily in <font color="#FF6700">Computer Science</font>, Physics and Mathematics, which has improved my critical thinking and problem-solving skills. I am a flexible individual with the ability to hit the ground running in any environment. My involvement in youth development and education has given me insight into better ways to teach and learn. 
 			</p>
-			<p>I like doing a <b>lot</b> of things, and this is one of them! I'm not the kind of person who could be satisfied with just doing one thing, so I make an effort to round myself off with numerous projects. I pick things up very quickly, so don't be surprised if this page changes if you refresh :P
+			<p>I like doing a <b>lot</b> of things, and this is one of them! I'm not the kind of person who could be satisfied with just doing one thing, so I make an effort to round myself off with numerous projects. I pick things up very quickly, so don't be surprised if this page changes when you refresh.
 			</p>
 		</div>
-		<div class="container" id="personal_about">
+		<div class="container" data-scroll-reveal="enter bottom move 40px, after 0.5s" id="personal_about">
 			<h2>About me</h2>
-			<p> I love a lot of things, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting at different times! It's wild living in a time where we have access to any and everything, and it'll be an interesting journey to see where we as a whole end up. Honestly, it's hard to find something that I can't find an interest in</p>
-			<p>Seriously, I love video games. You can probably find who I am in most games pretty easily and I'll try to keep an updated list here for you!</p>
+			<hr>
+			<div class="col-sm-4">
+				<p> I love a lot of things, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting in a different context! It's wild living in a time where we have access to any and everything, and it'll be an interesting journey to see where we as a whole end up. I was born and raised just outside of San Francisco in a city called <font color="#FF6700">South San Francisco</font>, but I spent five of the last six years in upstate <font color="#FF6700">New York</font>. It was a big culture shock, moving across the country; the lingo, style, and weather are all totally different. I found that I love <font color="#FF6700">Autumn</font>, but Winter is a whole nother animal outside of the Bay Area.</p>
+				<p>Seriously, I love video games. You can probably find who I am in most games pretty easily and I'll try to keep an updated list here for you!</p>
+			</div>
 		</div>
 		<div class="container" id="personal_skills">
 			<h2>Skills</h2>
+			<hr>
 			<div class="row">
 				<div class="col-sm-4">
 					<h5>Programming Languages</h5>
@@ -67,10 +83,13 @@
 					<h6>MS-Office</h6>
 					<h6>G-Suite</h6>
 					<h6>Windows</h6>
+					<h6>Git</h6>
+					<h6>Sublime Text</h6>
 				</div>
 				<div class="col-sm-4">
 					<h5>Personal</h5>
 					<h6>Scrappy</h6>
+					<h6>Youth Coach/Teacher</h6>
 					<h6>Fantasy Football Guru*</h6>
 				</div>
 			</div>
@@ -78,10 +97,14 @@
 		</div>
 		<div class="container" id="personal_hobby">
 			<h2>Hobbies</h2>
+			<hr>
+			<br>
+			<br><br><br><br><br><br>
 			<p>These are the activities that I feel best represent who I am, inside and outside!</p>
 		</div>
 		<div class="container" id="personal_education">
 			<h2>Education</h2>
+			<hr>
 			<div class="row">
 				<div class="col-sm-3">
 					<a href="https://www.rpi.edu/">Rensselaer Polytechnic Intitute</a>
@@ -106,7 +129,7 @@
 		</div>
 		<div class="footer" id="personal_contact">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-2">
 					<a href="mailto:jarriola2012+domain@gmail.com">
 						<i class="far fa-envelope"></i>
 					</a>
@@ -128,5 +151,9 @@
 			</div>
 		</div>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script> 
+		window.sr = ScrollReveal({ reset: false });
+		sr.reveal('.container', { distance: '50px', origin: 'bottom', delay: 300})
+		</script>
 	</body>
 </html>
