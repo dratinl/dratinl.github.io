@@ -6,31 +6,17 @@ body {
 /* Header formatting */
 
 header .jumbotron{
+  background: url('../img/better.jpg') no-repeat center center fixed;
   font-family: "Courier New", Courier, monospace;
-  background-color: #5f5f5f;
-  text-align: center;
-  height:400px;
-}
-header .jumbotron:hover{
   background-color: teal;
+  text-align: center;
+  height: 900px;
 }
-header .jumbotron:hover h1 {
-  color: #5f5f5f;
-}
-header .jumbotron:hover h6 {
-  color: #5f5f5f;
-}
-header .jumbotron h1 {
-  font-size: 80px;
-  -webkit-transform: translateY(35%);
-}
-header .jumbotron h6 {
-  font-size: 20px;
-  -webkit-transform:translateY(100%);
-}
+
 
 /* Navbar formatting */
 .navbar-default {
+  top: 50%;
   background-color: #5f5f5f; 
   position: fixed; 
   overflow: hidden;
@@ -59,15 +45,17 @@ p {
 }
 .container {
   margin-bottom: 80px; 
-  outline-color: #25ABD9; 
-  outline-style:solid; 
   height:auto; 
   padding-bottom: 8px; 
   padding-top: 12px;
   width: 55%;
+
 }
 .container:hover{
   outline-color:#FF6700;
+}
+#about_details, #about_format{
+  -webkit-transform: translateY(50%);
 }
 
 #personal_skills h5 {
@@ -107,8 +95,8 @@ i {
   color: #585858;
 }
 .footer {
-  background-color:#97bde4; 
-  height: 300px;
+  background-color:#25ABD9; 
+  height: 800px;
   padding-left: 120px; 
   padding-bottom: 40px; 
   padding-top: 12px; 
@@ -123,6 +111,4 @@ i {
   font-family: "Courier New", Courier, monospace;
   padding-left: 12px;
 }
-.footer .row{
-  padding-left: 24px;
-}
+
