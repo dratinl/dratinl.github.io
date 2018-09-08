@@ -31,7 +31,7 @@
 			<div class="jumbotron" id="home">
 			</div>
 		</header>
-		<!-- Footer navigation bar -->
+		<!--Side navigation bar-->
 		<nav class="navbar navbar-default" role="navigation" id="scrollbar">
 			<div class="row">
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -39,14 +39,14 @@
 						<li><a href="#home">^</a></li>
 						<li><a href="#personal_about">About</a></li>
 						<li><a href="#personal_skills">Skills</a></li>
-						<li><a href="#personal_hobby">Hobbies</a></li>
 						<li><a href="#personal_education">Education</a></li>
+						<li><a href="#personal_hobby">Hobbies</a></li>
 						<li><a href="#personal_contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- Main Content -->
+		<!--Main Content-->
 		<div class="container">
 			<h1 style="color:#5f5f5f; text-align:center; font-size:80px">Jacob Arriola</h1>
 			<h6 style="color:#5f5f5f; text-align:center; font-size:20px">Jake of all trades</h6>
@@ -58,37 +58,39 @@
 			</p>
 			<p>I like doing a <b>lot</b> of things, and this is one of them! I'm not the kind of person who could be satisfied with just doing one thing, so I make an effort to round myself off with numerous projects. I pick things up very quickly, so don't be surprised if this page changes when you refresh.
 			</p>
+			<hr>
 		</div>
+		<!--About Section-->
 		<div class="container" id="personal_about">
 			<h2>About me</h2>
 			<hr>
 			<div class="row">
 				<div class="col-sm-4" id="about_lore">
-					<p> I love a lot of things, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting in a different context! It's wild living in a time where we have access to any and everything, and it'll be an interesting journey to see where we as a whole end up. I was born and raised just outside of San Francisco in a city called <font color="#FF6700">South San Francisco</font>, but I spent five of the last six years in upstate <font color="#FF6700">New York</font>. It was a big culture shock, moving across the country; the lingo, style, and weather are all totally different. I found that I love <font color="#FF6700">Autumn</font>, but Winter is a whole nother animal outside of the Bay Area.</p>
-					<p>Seriously, I love video games. You can probably find who I am in most games pretty easily and I'll try to keep an updated list here for you!</p>
+					<p> I love a lot of things, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting in a different context! It's wild living in a time where we have access to any and everything, and it'll be an interesting journey to see where we as a whole end up. I was born and raised just outside of San Francisco in a city called <font color="#FF6700">South San Francisco</font>, but I spent five of the last six years in upstate <font color="#FF6700">New York</font>. It was a big culture shock, moving across the country; the lingo, style, and weather are all totally different. I found that I love <font color="#FF6700">Autumn</font>, but Winter is a whole 'nother animal outside of the Bay Area.</p>
 				</div>
-				<div class="col-sm-4 text-center">
-					<img src="{{ url_for('static',filename='img/better.jpg') }}" alt="Jacob and Meagan" height=350 width=300>
+				<div class="col-sm-4">
+					<img src="{{ url_for('static',filename='img/Disneynight.JPG') }}" alt="Jacob and Meagan" height=360 width=220 style='border-radius:25px';>
 				</div>
 				<div class="col-sm-1" id= "about_format">
 					<b>Name:</b>
 					<b>Age:</b>
 					<b>Location:</b>
 				</div>
-				<div class="col-sm-2" id= "about_details">
-					Jacob Augusto Arriola 
+				<div class="col-sm-3" id= "about_details">
+					Jacob Arriola 
 					<br>24 
 					<br>San Francisco Bay Area 
 				</div>
+				<hr>
 			</div>
-			
 		</div>
+		<!--Skills Section-->
 		<div class="container" id="personal_skills">
 			<h2>Skills</h2>
 			<hr>
 			<div class="row">
 				<div class="col-sm-4">
-					<h5>Programming Languages</h5>
+					<h5>Technical</h5>
 					<h6>Python</h6>
 					<h6>C++</h6>
 					<h6>HTML</h6>
@@ -101,69 +103,126 @@
 					<h6>G-Suite</h6>
 					<h6>Windows</h6>
 					<h6>Git</h6>
-					<h6>Sublime Text</h6>
 				</div>
 				<div class="col-sm-4">
 					<h5>Personal</h5>
 					<h6>Scrappy</h6>
 					<h6>Youth Coach/Teacher</h6>
 					<h6>Fantasy Football Guru*</h6>
+					<h6>Competitive</h6>
 				</div>
 			</div>
 			<p>* Claims are self-proclaimed and may be greatly exaggerated</p>
-		</div>
-		<div class="container" id="personal_hobby">
-			<h2>Hobbies</h2>
 			<hr>
-			<br>
-			<br><br><br><br><br><br>
-			<p>These are the activities that I feel best represent who I am, inside and outside!</p>
 		</div>
+		<!--Education Section-->
 		<div class="container" id="personal_education">
 			<h2>Education</h2>
 			<hr>
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<a href="https://www.rpi.edu/">Rensselaer Polytechnic Intitute</a>
 					<h6>Class of 2017 | Troy, NY</h6>
 				</div>
 				<div class="col-sm-6">
 					<h5>Bachelor - Interdisciplinary Science (Specialization: Computer Science)</h5>
 					<h6>I studied as an engineer for three years before taking a very basic programming class and changing tracks completely. After that it was two years of back to back to back programming and general computer science cramming until graduation. Now I still share the same interest that brought me to the industry to begin with, and I feel now just as I did then. There is nothing in this field that I cannot do.</h6>
+					<h6>My coursework focused on object-oriented programming, data structures, algorithms and software development and design. I have taken classes in a wide range of science courses including astro-physics, geology and engineering design.
 				</div>
 			</div>
+			<hr>
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<a href="https://www.riordanhs.org/">Archbishop Riordan Highschool</a>
 					<h6>Class of 2012 | San Francisco, CA</h6>
 				</div>
 				<div class="col-sm-6">
 					<h5>Highschool</h5>
-					<h6>I graduated highschool with math and physics being my favorite subjects, but far the most enjoyable aspect of attending Riordan was being involved with the Marching and Concert band. I had already had experience with playing music, but Scott Souza took that too a whole nother level. 
+					<h6>I graduated highschool with math and physics being my favorite subjects, but by far the most enjoyable aspect of attending Riordan was being involved with the Marching and Concert band. I had already had experience with playing music, but Scott Souza took that too a whole new level. Somehow he trained a giant group of rambunctious young men into the best highschool marching band San Francisco had to offer. The highlight of my time spent there is performing in the 2010 Giants World Series parade!</h6> 
 				</div>
 			</div>
-
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="https://www.holyangelscolma.com/">Holy Angels School</a>
+					<h6>Class of 2008 | Colma, CA</h6>
+				</div>
+				<div class="col-sm-6">
+					<h5>Grades K-8</h5>
+					<h6>Normally I wouldn't mention the middle school I attended, but this is where my journey really began and where I met a handful of lifelong friends. This school contributed to my primarily filipino upbringing and the only place I've heard of that served Jollibee for the occasional school lunch. I learned to really play and enjoy music here, and that has translated to every fascet of my life.</h6>
+				</div>
+			</div>
+			<hr>
 		</div>
+		<!--Hobbies Section-->
+		<div class="container" id="personal_hobby">
+			<h2>Hobbies</h2>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<h5>Soccer Coach</h5>
+					<h6>Mighty Girls</h6>
+				</div>
+				<div class="col-sm-6">
+					<h6>I coach an all girls youth soccer team in my spare time. It's all about learning and it's all about fun! I was heavily involved in youth sports as a kid and ended up loving every minute of it, so giving back and providing that same environment that I excelled in feels only natural!</h6>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<h5>Fantasy Sports</h5>
+					<h6>American Football</h6>
+				</div>
+				<div class="col-sm-6">
+					<h6>This one took me a little bit by surprise. I grew up with soccer and didn't develop an interest in football (read: massive bias against football) until just a couple years ago when a couple of friends devided to start up a fantasy league.</h6>
+					<h6>It's just the right amount of competetive and research focused needed to hook me in. The sport also serves as a great resource for programming practice as it deals with a large database of statistics and data manipulation.</h6>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<h5>Video games</h5>
+					<h6>DRATINL</h6>
+				</div>
+				<div class="col-sm-6">
+					<h6>If you can't tell by now, one of my major drivers is competition. It isn't that big of a surprise that a medium that lets me compete with others anytime, any place in a multitude of formats caught my attention. I reached the top percentage of players in a couple of games, namely League of Legends and Rocket League though the days of rigorously grinding those games is now in the past.</h6>
+					<h6>Nowadays, while I still enjoy a few Player versus Player games, I have begun to upload my experience playing single player games as a video game diary. I love the idea of being able to experience a living story with someone for the first time and I think that these will give me that kind of opportunity.</h6> 
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<h5>Music</h5>
+					<h6>Performance</h6>
+				</div>
+				<div class="col-sm-6">
+					<h6>I picked up the Alto Saxophone around the 7th grade, but didn't get serious about it until high school where I was a part of the Marching, Concert and Jazz bands. Playing, listening to, and discussing music is therapeutic in nature for me. Music is beautiful because it can be logical, complicated and calculated, but it can also be as simple as a single note. I believe that there are few trades where an amateur can truly appreciate something even with little understanding and it is one of the many beautiful things about music.</h6>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<!--Contact Section-->
 		<div class="footer" id="personal_contact">
 			<div class="container">
-				<div class="col-sm-2">
-					<a href="mailto:jarriola2012+domain@gmail.com">
-						<i class="far fa-envelope"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/jacob-arriola-2696189a/">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<a href="https://github.com/dratinl">
-						<i class="fab fa-github-square"></i>
-					</a>
+				<div class="row">
+						<h2>Interested? Contact me using one of the links below!</h2>
 				</div>
-				<div class="col-sm-4">
-					<a href="https://www.facebook.com/Yakeypoo">
-						<i class="fab fa-facebook-square"></i>
-					</a>
-					<a href="https://www.instagram.com/yakeypoo/">
-						<i class="fab fa-instagram"></i>
-					</a>
+				<div class="row">
+						<a href="mailto:jarriola2012+domain@gmail.com" >
+							<i class="far fa-envelope"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/jacob-arriola-2696189a/">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="https://www.facebook.com/Yakeypoo">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="https://www.instagram.com/yakeypoo/">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://github.com/dratinl">
+							<i class="fab fa-github-square"></i>
+						</a>
 				</div>
 			</div>
 		</div>
