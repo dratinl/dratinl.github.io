@@ -71,6 +71,9 @@ p {
   position:relative;
   -webkit-transform: translateY(25%);
 }
+#about_format b{
+  padding-right: 5px;
+}
 
 #personal_skills h5 {
   color: teal;
