@@ -13,6 +13,12 @@ header .jumbotron{
   height: 900px;
 }
 
+/*a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}*/
 
 /* Navbar formatting */
 .navbar-default {
@@ -29,10 +35,10 @@ header .jumbotron{
   text-align:center;
 }
 .navbar-default .row .navbar-nav a:hover{
-  color: #FF6700;
+  color: teal;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: teal; color: #FFFFFF; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: teal; color: #FFFFFF; vertical-align: text-top; }
 
 
 /* Main content formatting */
@@ -50,12 +56,14 @@ p {
   padding-bottom: 8px; 
   padding-top: 12px;
   width: 45%;
+  top:-100px;
 
 }
 .container:hover{
   outline-color:#FF6700;
 }
 #about_details, #about_format{
+  position:relative;
   -webkit-transform: translateY(25%);
 }
 
@@ -107,13 +115,15 @@ i {
   overflow:auto;
 }
 .footer h2{
+  -webkit-transform:translateX(50%);
+  position:relative;
   font-size: 36px;
   color: black;
   text-align:center;
 }
 .footer a{
   margin: auto auto; 
-  display:block; 
+  display:inline; 
   text-align: center
 }
 

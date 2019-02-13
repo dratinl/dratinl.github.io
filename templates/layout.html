@@ -24,8 +24,26 @@
 			position:relative;
 		}
 	</style>
+	<script>
+	// Uses .ready function to scroll to anchors
+		$(document).ready(function(){
+			// Retrieves and stores hash i.e the anchor to be used
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					// uses .animate and scrollTop to scroll to anchor
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){ 
+						window.location.hash = hash; 
+					});
+				}
+			});
+		});
+	</script>
 </head>
-	<body data-spy="scroll" data-target="#scrollbar">
+	<body data-spy="scroll" data-target="#scrollbar" data-offset='120'>
 		<header>
 			<!-- Top banner -->
 			<div class="jumbotron" id="home">
@@ -51,25 +69,25 @@
 			<h1 style="color:#5f5f5f; text-align:center; font-size:80px">Jacob Arriola</h1>
 			<h6 style="color:#5f5f5f; text-align:center; font-size:20px">Jake of all trades</h6>
 		</div>
-		<div class="container" id="personal_summary">
+		<div class="container" id="personal_about">
 			<h2>Welcome</h2>
 			<hr>
-			<p>I am a recent graduate of <font color="#FF6700">Rensselaer Polytechnic Institute</font> with a B.S degree in <font color="#FF6700">Interdisciplinary Science</font>. My coursework included classes primarily in <font color="#FF6700">Computer Science</font>, Physics and Mathematics, which has improved my critical thinking and problem-solving skills. I am a flexible individual with the ability to hit the ground running in any environment. My involvement in youth development and education has given me insight into better ways to teach and learn. 
+			<p>I am a recent graduate of <font color="#FF6700">Rensselaer Polytechnic Institute</font> with a B.S degree in <font color="#FF6700">Interdisciplinary Science</font>. My coursework included classes primarily in <font color="#FF6700">Computer Science</font>, Physics and Mathematics which has improved my critical thinking and problem-solving skills. I am a flexible individual with the ability to hit the ground running in any environment. My involvement in youth development and education has given me insight into better ways to teach and learn. 
 			</p>
-			<p>I like doing a <b>lot</b> of things, and this is one of them! I'm not the kind of person who could be satisfied with just doing one thing, so I make an effort to round myself off with numerous projects. I pick things up very quickly, so don't be surprised if this page changes when you refresh.
+			<p>I like doing a <b>lot</b> of things, and this is one of them! I'm not the kind of person who could be satisfied with just doing one thing, so I make an effort to round myself off with numerous projects. I find that branching out and absorbing aspects of different walks of life can translate well to current or future projects.
 			</p>
 			<hr>
 		</div>
 		<!--About Section-->
-		<div class="container" id="personal_about">
+		<div class="container">
 			<h2>About me</h2>
 			<hr>
 			<div class="row">
 				<div class="col-sm-4" id="about_lore">
-					<p> I love a lot of things, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting in a different context! It's wild living in a time where we have access to any and everything, and it'll be an interesting journey to see where we as a whole end up. I was born and raised just outside of San Francisco in a city called <font color="#FF6700">South San Francisco</font>, but I spent five of the last six years in upstate <font color="#FF6700">New York</font>. It was a big culture shock, moving across the country; the lingo, style, and weather are all totally different. I found that I love <font color="#FF6700">Autumn</font>, but Winter is a whole 'nother animal outside of the Bay Area.</p>
+					<p> I am easily infatuated, from sports to video games to animals to people to buildings! Everything is interesting in some way, and somethings are interesting in a different context! It's endlessly exciting living in a time where we have access to any and everything. I was born and raised just outside of San Francisco in a city called <font color="#FF6700">South San Francisco</font>, but I spent a good chunk of my recent years in upstate <font color="#FF6700">New York</font>. It was a big culture shock, moving across the country; the lingo, style, and weather are all totally different. I found that I love <font color="#FF6700">Autumn</font>, but Winter is a whole 'nother animal outside of the Bay Area. I am not the type of person who is easily phased by new environments and developments</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="{{ url_for('static',filename='img/Disneynight.JPG') }}" alt="Jacob and Meagan" height=360 width=220 style='border-radius:25px';>
+					<img src="{{ url_for('static',filename='img/me.JPG') }}" alt="Jacob and Meagan" style='border-radius:25px; height:auto; max-width: 100%';>
 				</div>
 				<div class="col-sm-1" id= "about_format">
 					<b>Name:</b>
@@ -78,8 +96,8 @@
 				</div>
 				<div class="col-sm-3" id= "about_details">
 					Jacob Arriola 
-					<br>24 
-					<br>San Francisco Bay Area 
+					<br>25 
+					<br>SF Bay Area 
 				</div>
 				<hr>
 			</div>
@@ -96,6 +114,8 @@
 					<h6>HTML</h6>
 					<h6>CSS</h6>
 					<h6>SQL</h6>
+					<h6>Troubleshooting</h6>
+					<h6>Tech Support</h6>
 				</div>
 				<div class="col-sm-4">
 					<h5>Tools</h5>
@@ -103,6 +123,8 @@
 					<h6>G-Suite</h6>
 					<h6>Windows</h6>
 					<h6>Git</h6>
+					<h6>Sublime Text 2</h6>
+					<h6>Slack</h6>
 				</div>
 				<div class="col-sm-4">
 					<h5>Personal</h5>
@@ -110,6 +132,7 @@
 					<h6>Youth Coach/Teacher</h6>
 					<h6>Fantasy Football Guru*</h6>
 					<h6>Competitive</h6>
+					<h6>Quick Learner</h6>
 				</div>
 			</div>
 			<p>* Claims are self-proclaimed and may be greatly exaggerated</p>
@@ -122,12 +145,13 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<a href="https://www.rpi.edu/">Rensselaer Polytechnic Intitute</a>
-					<h6>Class of 2017 | Troy, NY</h6>
+					<h6>Class of 2018 | Troy, NY</h6>
 				</div>
 				<div class="col-sm-6">
 					<h5>Bachelor - Interdisciplinary Science (Specialization: Computer Science)</h5>
-					<h6>I studied as an engineer for three years before taking a very basic programming class and changing tracks completely. After that it was two years of back to back to back programming and general computer science cramming until graduation. Now I still share the same interest that brought me to the industry to begin with, and I feel now just as I did then. There is nothing in this field that I cannot do.</h6>
-					<h6>My coursework focused on object-oriented programming, data structures, algorithms and software development and design. I have taken classes in a wide range of science courses including astro-physics, geology and engineering design.
+					<h6>I studied as a nuclear engineer for three years before taking a visual basic programming class and changing tracks completely. After that it was two years of back to back to back programming and computer science cramming until graduation. The thought process, method of finding answers and freedom of solution drew me to the field.</h6>
+					<h6>My coursework focused on object-oriented programming, data structures, algorithms and software development and design. I have taken classes in a wide range of science courses including astro-physics, geology and engineering design.</h6>
+					<h6>One thing I realized the more I dove into the subject is how applicable programming and computer science is to all aspects of learning. It provides a different method to learning how to use tools and functions as a means to an end, and is an intuitive way to understand cutting up a difficult problem into smaller steps. In today's age, I believe it could be a fundamental subject to learn for kids as the concepts help directly with mathematic and general scientific problem solving.</h6>
 				</div>
 			</div>
 			<hr>
@@ -174,7 +198,7 @@
 					<h6>American Football</h6>
 				</div>
 				<div class="col-sm-6">
-					<h6>This one took me a little bit by surprise. I grew up with soccer and didn't develop an interest in football (read: massive bias against football) until just a couple years ago when a couple of friends devided to start up a fantasy league.</h6>
+					<h6>This one took me a little bit by surprise. I grew up with soccer and didn't develop an interest in football (read: massive bias against football) until just a couple years ago when some highschool friends decided to start up a fantasy league.</h6>
 					<h6>It's just the right amount of competetive and research focused needed to hook me in. The sport also serves as a great resource for programming practice as it deals with a large database of statistics and data manipulation.</h6>
 				</div>
 			</div>
@@ -204,32 +228,30 @@
 		<!--Contact Section-->
 		<div class="footer" id="personal_contact">
 			<div class="container">
+				
 				<div class="row">
-						<h2>Interested? Contact me using one of the links below!</h2>
-				</div>
-				<div class="row">
-						<a href="mailto:jarriola2012+domain@gmail.com" >
-							<i class="far fa-envelope"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/jacob-arriola-2696189a/">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="https://www.facebook.com/Yakeypoo">
-							<i class="fab fa-facebook-square"></i>
-						</a>
-						<a href="https://www.instagram.com/yakeypoo/">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="https://github.com/dratinl">
-							<i class="fab fa-github-square"></i>
-						</a>
+					<a href="mailto:jarriola2012+domain@gmail.com" >
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/jacob-arriola-2696189a/">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://www.facebook.com/Yakeypoo">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.instagram.com/yakeypoo/">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://github.com/dratinl">
+						<i class="fab fa-github-square"></i>
+					</a>
 				</div>
 			</div>
 		</div>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script> 
-		window.sr = ScrollReveal({ reset: false });
-		sr.reveal('.container', { distance: '50px', origin: 'bottom', delay: 300})
+		window.sr = ScrollReveal({ reset: true });
+		sr.reveal('.container', { distance: '40px', origin: 'bottom', delay: 350})
 		</script>
 	</body>
 </html>
