@@ -4,7 +4,9 @@ body {
 }
 
 /* Header formatting */
-
+header {
+  width:100%;
+}
 header .jumbotron{
   background-position: center center;
   background-attachment: fixed;
