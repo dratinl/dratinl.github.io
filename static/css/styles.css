@@ -6,11 +6,11 @@ body {
 /* Header formatting */
 
 header .jumbotron{
-  background-image: url('../img/better.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: teal;
+  display:block;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   height: 900px;
