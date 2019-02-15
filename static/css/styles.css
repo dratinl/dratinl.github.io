@@ -32,6 +32,7 @@ header .jumbotron{
   position: fixed; 
   overflow: hidden;
   right: 0%;
+  width: 10%;
 }
 
 .navbar-default .row .navbar-nav a{
