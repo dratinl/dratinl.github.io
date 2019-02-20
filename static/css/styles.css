@@ -69,7 +69,8 @@ p {
 .container:hover{
   outline-color:#FF6700;
 }
-#about_details, #about_format{
+#about_format{
+  text-align: center;
   position:relative;
   -webkit-transform: translateY(25%);
 }
