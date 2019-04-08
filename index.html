@@ -29,29 +29,7 @@
 	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA5sKeAP///wDkvZcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMzMzMzAAMzIiIzMzMAAzIjIiMzMwADMiMiIzMzAAMyIyIjMzMAAzIzIiMzMwADMzMiIzMzAAMzMyIjMzMAAzMzMjMzMwADMzMzMzMzAAMzMyIjMzMAATIyIiIyMwADIiMiIyIjAAMzMzMzMzMAAzMzMjMzMwADMzMzMzMzDAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAA" rel="icon" type="image/x-icon" />
 	
 	<title>Jacob Arriola</title>
-	<style type="text/css">
-		body{
-			position:relative;
-		}
-	</style>
-	<script>
-	// Uses .ready function to scroll to anchors
-		$(document).ready(function(){
-			// Retrieves and stores hash i.e the anchor to be used
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					// uses .animate and scrollTop to scroll to anchor
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){ 
-						window.location.hash = hash; 
-					});
-				}
-			});
-		});
-	</script>
+	
 </head>
 	<body data-spy="scroll" data-target="#scrollbar" data-offset='120'>
 		<header>
@@ -128,6 +106,8 @@
 					<h6>C++</h6>
 					<h6>HTML</h6>
 					<h6>CSS</h6>
+					<h6>Vue.js</h6>
+					<h6>Node.js</h6>
 					<h6>SQL</h6>
 					<h6>Troubleshooting</h6>
 					<h6>Tech Support</h6>
@@ -152,6 +132,20 @@
 			</div>
 			<p>* Claims are self-proclaimed and may be greatly exaggerated</p>
 			<hr>
+		</div>
+		<!-- Projects Section -->
+		<div class="container" id="personal_projects">
+			<h2>Projects</h2>
+			<hr>
+			<div class="gallery_container">
+				<div class="gallery_first">
+					<a href="https://www.jakearriola.com/my-fantasy/" target="_blank">
+						<img src="static/img/FanLCS.jpg" alt="Fantasy LCS">
+						<div class ="gal_header"> A Fantasy LCS Project </div>
+					</a>
+				</div>
+			</div>
+
 		</div>
 		<!--Education Section-->
 		<div class="container" id="personal_education">
@@ -243,7 +237,6 @@
 		<!--Contact Section-->
 		<div class="footer" id="personal_contact">
 			<div class="container">
-				
 				<div class="row">
 					<a href="mailto:jarriola2012+domain@gmail.com" >
 						<i class="far fa-envelope"></i>
@@ -268,5 +261,23 @@
 		window.sr = ScrollReveal({ reset: true });
 		sr.reveal('.container', { distance: '40px', origin: 'bottom', delay: 350})
 		</script>
+		<script>
+		// Uses .ready function to scroll to anchors
+		$(document).ready(function(){
+			// Retrieves and stores hash i.e the anchor to be used
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					// uses .animate and scrollTop to scroll to anchor
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){ 
+						window.location.hash = hash; 
+					});
+				}
+			});
+		});
+	</script>
 	</body>
 </html>

@@ -96,6 +96,37 @@ p {
   padding-top: 24px;
 }
 
+.gallery_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  grid-auto-rows: minmax(100px, auto);
+  overflow: hidden;
+}
+
+.gallery_container > div {
+  border: 2px solid rgb(233, 171, 88);
+  border-radius: 4px;
+}
+.gal_header {
+  color: #FFF;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  padding: 10px 10px;
+  text-align: right;
+  text-shadow: -2px 4px 20px #000;
+  transform: translateY(-50px);
+  transition: all 0.4s cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+
+}
+
 #personal_education a,h5{
   color: teal; 
   font-size: 17px; 
