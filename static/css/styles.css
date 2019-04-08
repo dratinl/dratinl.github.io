@@ -105,8 +105,7 @@ p {
 }
 
 .gallery_container > div {
-  grid-row: 1;
-  grid-column: 1;
+  
   border: 2px solid rgb(233, 171, 88);
   border-radius: 4px;
 }
