@@ -105,9 +105,10 @@ p {
 }
 
 .gallery_container > div {
-
-  border: 2px solid rgb(233, 171, 88);
   border-radius: 4px;
+}
+div.gallery:hover {
+  border: 2px solid black;
 }
 .thumbnail{
   height: auto;
