@@ -100,7 +100,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 360px;
   overflow: hidden;
 }
 
@@ -120,18 +120,14 @@ p {
   position: absolute;
   right: 0;
   top: 0px;
-  width: 100%;
-  padding: 10px 10px;
   text-align: right;
   text-shadow: -2px 4px 20px #000;
   transform: translateY(-50px);
-  transition: all 0.4s cubic-bezier(0, 0.5, 0.5, 1);
 }
 
 .gallery {
   position: relative;
   overflow: hidden;
-
 }
 
 #personal_education a,h5{
