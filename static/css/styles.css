@@ -100,12 +100,12 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: 180px;
   overflow: hidden;
 }
 
 .gallery_container > div {
-  
+
   border: 2px solid rgb(233, 171, 88);
   border-radius: 4px;
 }
