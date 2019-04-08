@@ -128,6 +128,7 @@ p {
 .gallery {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 #personal_education a,h5{
